@@ -1,0 +1,13 @@
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.xml
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\MainWindow.baml
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\MainWindow.g.vb
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\Application.g.vb
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal_MarkupCompile.cache
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal.g.resources
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal.Resources.resources
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal.vbproj.GenerateResource.Cache
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal.exe
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal.xml
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal.pdb
