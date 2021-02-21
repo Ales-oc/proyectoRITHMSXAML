@@ -35,8 +35,9 @@ Class MainWindow
             ds = tBD.obtenerDatos(strCon, "SELECT CONVERT(VARCHAR(MAX), DECRYPTBYPASSPHRASE('password', password)) FROM Usuarios WHERE " + campoAComparar + "='" + UserTextBox.Text + "'")
 
             If PasswordBox.Password = ds.Tables(0).Rows.Item(0).Item(0) Then
-                My.Windows.HomePage.Show()
+                Dim homePage As New HomePage
                 Me.Close()
+                homePage.ShowDialog()
             Else
                 Me.ErrorTextBlock.Text = "El usuario o contraseña especificado no existe"
             End If

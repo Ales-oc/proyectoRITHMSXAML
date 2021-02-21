@@ -11,5 +11,6 @@
 Option Strict Off
 Option Explicit On
 
-<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logo1.png")> 
+<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pausa.svg"),  _
+ Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("play.svg")> 
 

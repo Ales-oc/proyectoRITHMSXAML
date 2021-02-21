@@ -27,7 +27,6 @@ Public Class addSong
 
         Try
             insertarCancion()
-        
         Finally
             tBD.cerrarConexion(conexion)
         End Try
@@ -38,8 +37,8 @@ Public Class addSong
         If comprobarDatos() Then
             conexion = tBD.abrirConexion(strCon)
             insertarEnTabla()
-            MsgBox("Correcto")
-            'Me.Close()
+            MsgBox("Archivo subido correctamente")
+            Me.Close()
         End If
     End Sub
 
