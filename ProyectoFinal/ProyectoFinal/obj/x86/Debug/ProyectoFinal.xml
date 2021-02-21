@@ -6,7 +6,15 @@ ProyectoFinal
 </name>
 </assembly>
 <members>
-<member name="M:ProyectoFinal.MainWindow.InitializeComponent">
+<member name="M:ProyectoFinal.HomePage.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:ProyectoFinal.HomePage">
+	<summary>
+HomePage
+</summary>
+</member><member name="M:ProyectoFinal.MainWindow.InitializeComponent">
 	<summary>
 InitializeComponent
 </summary>
@@ -21,6 +29,38 @@ InitializeComponent
 </member><member name="T:ProyectoFinal.registro">
 	<summary>
 registro
+</summary>
+</member><member name="M:ProyectoFinal.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+	<summary>
+CreateInstance
+</summary>
+</member><member name="M:ProyectoFinal.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+	<summary>
+GetPropertyValue
+</summary>
+</member><member name="M:ProyectoFinal.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+	<summary>
+SetPropertyValue
+</summary>
+</member><member name="M:ProyectoFinal.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+	<summary>
+CreateDelegate
+</summary>
+</member><member name="M:ProyectoFinal.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+	<summary>
+AddEventHandler
+</summary>
+</member><member name="T:ProyectoFinal.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+	<summary>
+GeneratedInternalTypeHelper
+</summary>
+</member><member name="M:ProyectoFinal.addSong.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:ProyectoFinal.addSong">
+	<summary>
+addSong
 </summary>
 </member><member name="M:ProyectoFinal.Application.InitializeComponent">
 	<summary>
@@ -73,9 +113,57 @@ Application
  Módulo utilizado para definir las propiedades disponibles en el espacio de nombres My de WPF
  </summary>
 	<remarks></remarks>
+</member><member name="T:ProyectoFinal.RithmsDataSet.CancionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:ProyectoFinal.RithmsDataSet.CancionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:ProyectoFinal.RithmsDataSet.CancionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:ProyectoFinal.RithmsDataSet">
 	<summary>
 Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:ProyectoFinal.RithmsDataSetTableAdapters.CancionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(ProyectoFinal.RithmsDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(ProyectoFinal.RithmsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(ProyectoFinal.RithmsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager.UpdateAll(ProyectoFinal.RithmsDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:ProyectoFinal.RithmsDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
 </members>

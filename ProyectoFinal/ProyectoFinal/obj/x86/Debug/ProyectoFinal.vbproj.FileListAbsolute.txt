@@ -14,3 +14,9 @@ C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\Pro
 C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
 C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\registro.baml
 C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\registro.g.vb
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\HomePage.baml
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\HomePage.g.vb
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\ProyectoFinal_MarkupCompile.lref
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\addSong.baml
+C:\Users\aleru\Desktop\Actividades_a_entregar\PoroyectoFinalDI\ProyectoFinal\ProyectoFinal\obj\x86\Debug\addSong.g.vb

@@ -1,66 +1,70 @@
 ﻿<Window x:Class="registro"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="Registro RITHMS™" Height="647" Width="316" Background="Black" AllowsTransparency="False" ResizeMode="CanMinimize" ShowInTaskbar="False" WindowStyle="ToolWindow" IsEnabled="True">
+    Title="Registro RITHMS™" Height="585" Width="290" Background="Black" AllowsTransparency="False" ResizeMode="CanMinimize" ShowInTaskbar="False" WindowStyle="None" IsEnabled="True" Topmost="False" AllowDrop="False" ForceCursor="True" WindowStartupLocation="CenterScreen">
     
     <Grid>
-        <GroupBox Header="Registro de usuario" Height="596" HorizontalAlignment="Left" Margin="12,0,0,0" Name="GroupBox1" VerticalAlignment="Top" Width="275" Foreground="White">
-            <StackPanel Orientation="Vertical">
-
-                <Label Content="Nombre de usuario:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,20,35,-42" Name="Label1" Width="143" />
-                <TextBox Height="36" Margin="0,39,0,0" Name="UserTextBox" Width="201" FontFamily="Trebuchet MS" FontSize="13" Padding="10,10,0,0" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FF454545" FontStretch="Normal" SelectionBrush="{x:Null}">
-                    <TextBox.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20" />
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
-
-                <Label Content="Correo:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,10,110,-23" Name="Label2" Width="64" />
-                <TextBox Height="36" Margin="0,20,0,0" Name="CorreoTextBox" Width="201" FontFamily="Trebuchet MS" FontSize="13" Padding="10,10,0,0" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FF454545" FontStretch="Normal" SelectionBrush="{x:Null}">
-                    <TextBox.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20" />
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
-
-                <Label Content="Fecha de nacimiento:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,10,25,-26" Name="Label5" Width="151" />
-                <Calendar Height="170" Name="Calendar1" Width="180" Margin="0,20,0,0" Background="#FF525152" Foreground="WhiteSmoke" SelectionMode="SingleDate"/>
-                
-                <Label Content="Contraseña:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,0,85,-23" Name="Label3" Width="89" />
-                <PasswordBox Height="36" Margin="0,20,0,0" Name="PasswordBox" Width="201" Padding="10,10,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF454545" FontSize="13" FontFamily="Segoe UI Historic" SelectionBrush="{x:Null}" Panel.ZIndex="1">
-                    <PasswordBox.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20" />
-                        </Style>
-                    </PasswordBox.Resources>
-                </PasswordBox>
-
-                <TextBox Height="36" Margin="0,-35,0,0" Name="PassTextBox" Width="201" FontFamily="Trebuchet MS" FontSize="13" Padding="10,10,0,0" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FF454545" FontStretch="Normal" SelectionBrush="{x:Null}">
-                    <TextBox.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20" />
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
-                <CheckBox Name="TermsCheckBox" Margin="30,10,0,0">
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock Text="Acepto los terminos y condiciones" Height="18" Name="TextBlock1" Margin="0,0,0,0" Foreground="WhiteSmoke" Width="206" TextWrapping="WrapWithOverflow" TextDecorations="Underline" />
-                        <TextBlock Text="de uso de RITHMS™" Height="18" Name="TextBlock2" Margin="0,0,0,0" Foreground="WhiteSmoke" Width="245" TextWrapping="WrapWithOverflow"/>
-                    </StackPanel>
-                </CheckBox>
-                <Button Content="Registrarse" Height="38" Margin="0,10,0,0" Name="btnInit" Width="157" Background="#FF888F0B" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="17" FontWeight="Bold" FontStyle="Normal">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <TextBlock Height="44" Margin="0,7,0,0" Name="ErrorTextBlock" Text="" Width="238" FontSize="12" FontFamily="Trebuchet MS" FontWeight="Bold" FontStretch="ExtraExpanded" TextWrapping="WrapWithOverflow" Foreground="Red" TextAlignment="Center" />
-            </StackPanel>
-        </GroupBox>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="172*" />
+            <ColumnDefinition Width="96*" />
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Registro de usuario" Height="580" HorizontalAlignment="Center" Name="GroupBox1" VerticalAlignment="Top" Width="275" Foreground="White" Grid.ColumnSpan="2" Margin="-4,0"></GroupBox>
+        <StackPanel Orientation="Vertical" Margin="5,16,3,0" Grid.ColumnSpan="2">
+            <Label Content="Nombre de usuario:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,20,35,-42" Name="Label1" Width="143" />
+            <TextBox Height="36" Margin="0,39,0,0" Name="UserTextBox" Width="201" FontFamily="Trebuchet MS" FontSize="13" Padding="10,10,0,0" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FF454545" FontStretch="Normal" SelectionBrush="{x:Null}">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20" />
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label Content="Correo:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,10,110,-23" Name="Label2" Width="64" />
+            <TextBox Height="36" Margin="0,20,0,0" Name="CorreoTextBox" Width="201" FontFamily="Trebuchet MS" FontSize="13" Padding="10,10,0,0" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FF454545" FontStretch="Normal" SelectionBrush="{x:Null}">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20" />
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label Content="Fecha de nacimiento:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,10,25,-26" Name="Label5" Width="151" />
+            <Calendar Height="170" Name="Calendar1" Width="180" Margin="0,20,0,0" Background="#FF525152" Foreground="WhiteSmoke" SelectionMode="SingleDate" />
+            <Label Content="Contraseña:" FontFamily="Trebuchet MS" FontSize="14" FontStretch="Expanded" FontWeight="Bold" Foreground="#FFDEDEDE" Height="26" Margin="0,0,85,-23" Name="Label3" Width="89" />
+            <PasswordBox Height="36" Margin="0,20,0,0" Name="PasswordBox" Width="201" Padding="10,10,0,0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF454545" FontSize="13" FontFamily="Segoe UI Historic" SelectionBrush="{x:Null}" Panel.ZIndex="1">
+                <PasswordBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20" />
+                    </Style>
+                </PasswordBox.Resources>
+            </PasswordBox>
+            <TextBox Height="36" Margin="0,-35,0,0" Name="PassTextBox" Width="201" FontFamily="Trebuchet MS" FontSize="13" Padding="10,10,0,0" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FF454545" FontStretch="Normal" SelectionBrush="{x:Null}">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20" />
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <CheckBox Name="TermsCheckBox" Margin="30,10,0,0">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Acepto los terminos y condiciones" Height="18" Name="TextBlock1" Margin="0,0,0,0" Foreground="WhiteSmoke" Width="206" TextWrapping="WrapWithOverflow" TextDecorations="Underline" />
+                    <TextBlock Text="de uso de RITHMS™" Height="18" Name="TextBlock2" Margin="0,0,0,0" Foreground="WhiteSmoke" Width="245" TextWrapping="WrapWithOverflow" />
+                </StackPanel>
+            </CheckBox>
+            <Button Content="Registrarse" Height="38" Margin="0,10,0,0" Name="btnInit" Width="157" Background="#FF888F0B" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="17" FontWeight="Bold" FontStyle="Normal">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBlock Height="44" Margin="0,7,0,0" Name="ErrorTextBlock" Text="" Width="238" FontSize="12" FontFamily="Trebuchet MS" FontWeight="Bold" FontStretch="ExtraExpanded" TextWrapping="WrapWithOverflow" Foreground="Red" TextAlignment="Center" />
+        </StackPanel>
+        <Button Content="×" Height="30" HorizontalAlignment="Right" Margin="0,20,14,0" Name="btnClose" VerticalAlignment="Top" Width="30" Background="#FF923DDB" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="17" FontWeight="Bold" FontStyle="Normal" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
     
 </Window>

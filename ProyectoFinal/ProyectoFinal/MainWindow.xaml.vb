@@ -35,8 +35,8 @@ Class MainWindow
             ds = tBD.obtenerDatos(strCon, "SELECT CONVERT(VARCHAR(MAX), DECRYPTBYPASSPHRASE('password', password)) FROM Usuarios WHERE " + campoAComparar + "='" + UserTextBox.Text + "'")
 
             If PasswordBox.Password = ds.Tables(0).Rows.Item(0).Item(0) Then
-                MsgBox("Usuario válido")
-                Me.ErrorTextBlock.Text = ""
+                My.Windows.HomePage.Show()
+                Me.Close()
             Else
                 Me.ErrorTextBlock.Text = "El usuario o contraseña especificado no existe"
             End If
@@ -55,6 +55,7 @@ Class MainWindow
     End Function
 
     Private Sub btnRegist_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles btnRegist.Click
-        My.Windows.registro.Show()
+        Dim registroForm As New registro
+        registroForm.ShowDialog()
     End Sub
 End Class
