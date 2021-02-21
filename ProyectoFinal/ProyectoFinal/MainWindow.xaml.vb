@@ -54,4 +54,7 @@ Class MainWindow
         End If
     End Function
 
+    Private Sub btnRegist_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles btnRegist.Click
+        My.Windows.registro.Show()
+    End Sub
 End Class

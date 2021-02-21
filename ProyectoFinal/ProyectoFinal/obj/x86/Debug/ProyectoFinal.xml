@@ -14,6 +14,14 @@ InitializeComponent
 	<summary>
 MainWindow
 </summary>
+</member><member name="M:ProyectoFinal.registro.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:ProyectoFinal.registro">
+	<summary>
+registro
+</summary>
 </member><member name="M:ProyectoFinal.Application.InitializeComponent">
 	<summary>
 InitializeComponent
@@ -25,10 +33,6 @@ Application Entry Point.
 </member><member name="T:ProyectoFinal.Application">
 	<summary>
 Application
-</summary>
-</member><member name="T:ProyectoFinal.RithmsDataSet">
-	<summary>
-Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="P:ProyectoFinal.My.Resources.Resources.ResourceManager">
 	<summary>
@@ -69,6 +73,10 @@ Represents a strongly typed in-memory cache of data.
  Módulo utilizado para definir las propiedades disponibles en el espacio de nombres My de WPF
  </summary>
 	<remarks></remarks>
+</member><member name="T:ProyectoFinal.RithmsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
 </member>
 </members>
 </doc>

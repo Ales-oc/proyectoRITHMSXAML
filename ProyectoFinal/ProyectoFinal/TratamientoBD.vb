@@ -20,6 +20,7 @@ Public Class TratamientoBD
         Dim dt As DataTable = New DataTable
 
         adapter.Fill(dt)
+        conexion.Close()
         If dt.Rows.Count > 0 Then
             Return True
         Else
@@ -33,6 +34,7 @@ Public Class TratamientoBD
         Dim ds As DataSet = New DataSet
 
         adapter.Fill(ds)
+        conexion.Close()
         Return ds
     End Function
 End Class

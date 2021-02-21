@@ -38,3 +38,7 @@ CREATE TABLE Canc_Playl(
 	CONSTRAINT FK_idPlaylist FOREIGN KEY (id_playlist)
 	REFERENCES Playlists(id_playlist) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+SELECT CONVERT(VARCHAR(MAX), DECRYPTBYPASSPHRASE('password', password)) FROM Usuarios WHERE nickname='admin_aoc'
+
+SELECT * FROM Usuarios WHERE nickname='admin_aoc' AND password = ENCRYPTBYPASSPHRASE('password', 'admin_aoc')
