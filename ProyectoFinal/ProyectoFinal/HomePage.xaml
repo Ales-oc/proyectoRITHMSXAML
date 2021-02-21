@@ -19,8 +19,8 @@
                         </DockPanel.Background>
                         <TextBlock DockPanel.Dock="Top" Height="50" Name="TextBlock2" Text='"Rithm" seleccionado...' Width="420" Foreground="#FFCBCBCB" FontWeight="Bold" FontSize="26" TextAlignment="Center" VerticalAlignment="Center" Margin="10,350,10,10"/>
                         <TextBlock DockPanel.Dock="Top" Height="50" Name="TextBlockDatos" Text="" Width="420" Foreground="#FF969696" FontWeight="Bold" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" Margin="10,-25,10,10"/>
-                        <Button DockPanel.Dock="Top" Height="60" Margin="0,18,0,0" Name="btnPlay" Width="60" Background="#FF3234DB" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="40" FontWeight="Bold" FontStyle="Normal" Visibility="Visible" Panel.ZIndex="1">
-                            <Image Source="boton-de-play.png" Width="40" Height="40" Margin="8,0,0,0" Name="Image1" />
+                        <Button DockPanel.Dock="Top" Height="60" Margin="0,18,0,0" Name="btnPlay" Width="60" Background="WhiteSmoke" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="40" FontWeight="Bold" FontStyle="Normal" Visibility="Visible" Panel.ZIndex="1">
+                            <Image Source="play.png" Width="25" Height="25" Margin="5,0,0,0" Name="Image1" />
                             <Button.Resources>
                                 
                                 <Style TargetType="Border">
@@ -28,8 +28,8 @@
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button DockPanel.Dock="Top" Height="60" Margin="0,-410,0,0" Name="btnPause" Width="60" Background="#FFCBCBCB" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="40" FontWeight="Bold" FontStyle="Normal" Visibility="Hidden">
-                            <Image Source="pausa.svg" Width="40" Height="40" Margin="2,0,0,0" Visibility="Visible" />
+                        <Button DockPanel.Dock="Top" Height="60" Margin="0,-407,0,0" Name="btnPause" Width="60" Background="WhiteSmoke" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="40" FontWeight="Bold" FontStyle="Normal" Visibility="Hidden">
+                            <Image Source="pausa.png" Width="25" Height="25" Margin="2,0,0,0" Visibility="Visible" />
                             <Button.Resources>
 
                                 <Style TargetType="Border">
