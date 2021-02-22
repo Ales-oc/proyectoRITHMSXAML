@@ -36,6 +36,7 @@ Class MainWindow
 
             If PasswordBox.Password = ds.Tables(0).Rows.Item(0).Item(0) Then
                 Dim homePage As New HomePage
+                homePage.nombreUsr = UserTextBox.Text
                 Me.Close()
                 homePage.ShowDialog()
             Else

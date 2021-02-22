@@ -177,5 +177,8 @@
     <Resource Include="pausa.png" />
     <Resource Include="play.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

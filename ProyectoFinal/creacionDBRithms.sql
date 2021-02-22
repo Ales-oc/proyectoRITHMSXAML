@@ -5,12 +5,13 @@ CREATE TABLE Usuarios(
 	id_user INT IDENTITY(1,1) PRIMARY KEY,
 	nickname VARCHAR(50) UNIQUE,
 	correo VARCHAR(80) UNIQUE,
-	password VARBINARY(8000),
-	fecha_nacimiento DATETIME
+	password VARBINARY(MAX),
+	fecha_nacimiento DATETIME,
+	Admin BIT
 );
 
 INSERT INTO Usuarios VALUES
-('admin_aoc', 'alejandroortizcaraballo@gmail.com', ENCRYPTBYPASSPHRASE('password', 'admin_aoc'), '14-02-2021');
+('admin_aoc', 'alejandroortizcaraballo@gmail.com', ENCRYPTBYPASSPHRASE('password', 'admin_aoc'), '14/02/2021', 1);
 
 CREATE TABLE Canciones(
 	id_song INT IDENTITY(1,1) PRIMARY KEY,
@@ -23,7 +24,7 @@ CREATE TABLE Canciones(
 CREATE TABLE Playlists(
 	id_playlist INT IDENTITY(1,1) PRIMARY KEY,
 	titulo VARCHAR(80),
-	id_user INT,
+	id_user INT UNIQUE,
 	CONSTRAINT FK_idUsuario FOREIGN KEY (id_user)
 	REFERENCES Usuarios(id_user) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -40,5 +41,3 @@ CREATE TABLE Canc_Playl(
 );
 
 SELECT CONVERT(VARCHAR(MAX), DECRYPTBYPASSPHRASE('password', password)) FROM Usuarios WHERE nickname='admin_aoc'
-
-SELECT * FROM Usuarios WHERE nickname='admin_aoc' AND password = ENCRYPTBYPASSPHRASE('password', 'admin_aoc')

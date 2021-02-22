@@ -2,6 +2,8 @@
 Imports System.Data
 
 Public Class HomePage
+
+    Public nombreUsr As String
     Dim temp As String = My.Computer.FileSystem.SpecialDirectories.Temp
     Dim strCon As String = System.Configuration.ConfigurationSettings.AppSettings("strCon")
     Dim tBD As TratamientoBD = New TratamientoBD
@@ -11,11 +13,9 @@ Public Class HomePage
     Dim rutaArchivoTemp As String
     Dim bytesArchivo() As Byte
 
-    Private Sub HomePage_Initialized(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Initialized
-
-    End Sub
-
     Private Sub Window_Loaded(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
+
+        usrTextBlock.Text += nombreUsr
 
         Dim RithmsDataSet As ProyectoFinal.RithmsDataSet = CType(Me.FindResource("RithmsDataSet"), ProyectoFinal.RithmsDataSet)
         'Cargar datos en la tabla Canciones. Puede modificar este código según sea necesario.

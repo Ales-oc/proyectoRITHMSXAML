@@ -11,5 +11,5 @@
 Option Strict Off
 Option Explicit On
 
-<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("play.svg")> 
+<Assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("user.png")> 
 

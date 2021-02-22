@@ -7,8 +7,12 @@
         <CollectionViewSource x:Key="CancionesViewSource" Source="{Binding Path=Canciones, Source={StaticResource RithmsDataSet}}" />
     </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="918*" />
+            <RowDefinition Height="43*" />
+        </Grid.RowDefinitions>
         <TabControl Height="900" HorizontalAlignment="Center" Margin="11,12,13,0" Name="TabControl1" VerticalAlignment="Top" Width="1774" Background="Black">
-            <TabItem Header="Nuestros Rithms" Name="TabSongs" OpacityMask="{x:Null}" FontFamily="Trebuchet MS" FontWeight="Bold" Background="#FF030303">
+            <TabItem Header="Nuestros Rithms" Name="TabSongs" OpacityMask="{x:Null}" FontFamily="Trebuchet MS" FontWeight="Bold" Background="#FF030303" Foreground="#FF656565">
                 <StackPanel Height="862" HorizontalAlignment="Center" Margin="11,12,13,0" Name="StackPanelSong" VerticalAlignment="Top" Width="1774" Orientation="Horizontal" Background="Black" DataContext="{StaticResource CancionesViewSource}">
                     <DockPanel Width="550" HorizontalAlignment="Left" Height="870" Margin="0,-5,0,0">
                         <DockPanel.Background>
@@ -89,8 +93,77 @@
                     </Button>
                 </StackPanel>
             </TabItem>
+            <TabItem Header="Tu RithmLists" Name="TabPlaylist" OpacityMask="{x:Null}" FontFamily="Trebuchet MS" FontWeight="Bold" Background="#FF030303" Foreground="#FF656565">
+                <StackPanel Height="862" HorizontalAlignment="Center" Margin="11,12,13,0" Name="StackPanelList" VerticalAlignment="Top" Width="1774" Orientation="Horizontal" Background="Black" DataContext="{StaticResource CancionesViewSource}">
+                    <DockPanel Width="550" HorizontalAlignment="Left" Height="870" Margin="0,-5,0,0">
+                        <DockPanel.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF555555" Offset="0" />
+                                <GradientStop Color="#FF070707" Offset="1" />
+                            </LinearGradientBrush>
+                        </DockPanel.Background>
+                        <TextBlock DockPanel.Dock="Top" Height="50" Name="TextBlock4" Text='"Rithm" seleccionado...' Width="420" Foreground="#FFCBCBCB" FontWeight="Bold" FontSize="26" TextAlignment="Center" VerticalAlignment="Center" Margin="10,350,10,10"/>
+                        <TextBlock DockPanel.Dock="Top" Height="50" Name="TextBlockDatosPL" Text="" Width="420" Foreground="#FF969696" FontWeight="Bold" FontSize="20" TextAlignment="Center" VerticalAlignment="Center" Margin="10,-25,10,10"/>
+                        <Button DockPanel.Dock="Top" Height="60" Margin="0,18,0,0" Name="btnPlayPL" Width="60" Background="WhiteSmoke" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="40" FontWeight="Bold" FontStyle="Normal" Visibility="Visible" Panel.ZIndex="1">
+                            <Image Source="play.png" Width="25" Height="25" Margin="5,0,0,0"/>
+                            <Button.Resources>
+
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="100" />
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <Button DockPanel.Dock="Top" Height="60" Margin="0,-407,0,0" Name="btnPausePL" Width="60" Background="WhiteSmoke" Foreground="White" BorderBrush="{x:Null}" FontFamily="Trebuchet MS" FontSize="40" FontWeight="Bold" FontStyle="Normal" Visibility="Hidden">
+                            <Image Source="pausa.png" Width="25" Height="25" Margin="2,0,0,0" Visibility="Visible" />
+                            <Button.Resources>
+
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="100" />
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </DockPanel>
+                    <DataGrid AlternatingRowBackground="Black" AutoGenerateColumns="False" BorderBrush="{x:Null}" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserResizeRows="False" CanUserSortColumns="False" EnableRowVirtualization="True" FontStretch="ExtraExpanded" Foreground="White" GridLinesVisibility="Horizontal" HeadersVisibility="None" Height="808" HorizontalContentAlignment="Left" HorizontalGridLinesBrush="White" IsEnabled="True" ItemsSource="{Binding}" MinColumnWidth="420" Name="DataGrid1" RowBackground="{x:Null}" RowDetailsVisibilityMode="Collapsed" SelectedIndex="1" SelectionMode="Single" Width="1204" Margin="15,0,0,0">
+                        <DataGrid.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF3B3B3B" Offset="0" />
+                                <GradientStop Color="Black" Offset="1" />
+                            </LinearGradientBrush>
+                        </DataGrid.Background>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="DataGridTextColumn1" Binding="{Binding Path=autor}" FontFamily="Trebuchet MS" FontSize="17" FontWeight="Normal" Foreground="#FF343434" Header="autor" IsReadOnly="True" Selector.IsSelected="False" Width="SizeToHeader">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextBlock.Background" Value="Transparent" />
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn x:Name="DataGridTextColumn2" Binding="{Binding Path=titulo}" FontFamily="Trebuchet MS" FontSize="18" Header="titulo" IsReadOnly="True" Width="SizeToHeader">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextBlock.Background" Value="Transparent" />
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn x:Name="DataGridTextColumn3" Binding="{Binding Path=genero}" FontFamily="Trebuchet MS" FontSize="17" Foreground="#FF2B2B2B" Header="genero" IsReadOnly="True" Width="SizeToHeader">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="TextBlock.Background" Value="Transparent" />
+                                        <Setter Property="FrameworkElement.HorizontalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
         </TabControl>
-        <TextBlock Height="25" HorizontalAlignment="Left" Margin="1676,926,0,0" Name="TextBlock1" Text="Sobre Nosotros" VerticalAlignment="Top" Width="109" FontSize="13" FontFamily="Trebuchet MS" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="#FF3537E8" TextDecorations="Underline"/>
+        <TextBlock Height="25" HorizontalAlignment="Left" Margin="1676,8,0,0" Name="TextBlock1" Text="Sobre Nosotros" VerticalAlignment="Top" Width="109" FontSize="13" FontFamily="Trebuchet MS" FontWeight="Bold" FontStretch="UltraExpanded" Foreground="#FF3537E8" TextDecorations="Underline" Grid.Row="1" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="50,15,0,0" Name="usrTextBlock" Text="Usuario: " VerticalAlignment="Top" Foreground="#FFBEBEBE" Width="409" FontFamily="Trebuchet MS" FontSize="14" FontWeight="Bold" Grid.Row="1" />
+        <Image Height="119" HorizontalAlignment="Left" Margin="16,49,0,0" Name="Image2" Stretch="Fill" VerticalAlignment="Top" Width="116" Grid.Row="1" />
+        <Image Height="20" Name="Image3" Stretch="Fill" Width="20" Margin="27,9,1751,14" Source="/ProyectoFinal;component/user.png" Grid.Row="1" />
     </Grid>
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
